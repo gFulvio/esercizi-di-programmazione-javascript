@@ -37,7 +37,7 @@ switch (scelta) {
   case 3:
     console.log(e + c);
     break;
-  case 4:
+  case 4: 
     console.log(e + d);
     break;
   default:
