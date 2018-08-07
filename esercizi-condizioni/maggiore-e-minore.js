@@ -16,7 +16,7 @@ if (a > b && a > c && a > d){
 } else if (c > a && c > b && c > d){
   console.log(c);
 } else if (d > a && d > b && d > c){
-  console.log(d);
+  console.log(d); 
 }
 if (a < b && a < c && a < d){
   console.log(a);
