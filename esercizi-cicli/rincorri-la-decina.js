@@ -4,3 +4,8 @@
   Hint: per andare a capo stampa '\n'.
   http://www.imparareaprogrammare.it
 */
+
+
+for (i = 0; i < 100; i++){
+  console.log(i);
+}
