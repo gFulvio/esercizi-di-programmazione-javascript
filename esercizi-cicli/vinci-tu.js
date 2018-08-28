@@ -5,6 +5,11 @@
   http://www.imparareaprogrammare.it
 */
 
+console.log("Il gioco dei dadi, tre tiri per ciascun giocatore!");
+
+var giocatore1 = "Fulvio";
+var giocatore2 = "Lorenzo";
+
 //Numero di tiri
 var n = 3;
 
@@ -12,23 +17,31 @@ var n = 3;
 var min = 1;
 var max = 6;
 
+//Totale dei tiri di ciascun giocatore
+var totaleGiocatore1 = 0;
+var totaleGiocatore2 = 0;
+
 //Tiri del giocatore 1
-console.log("Giocatore 1");
-for (i = 0; i < n; i++){
-  var random1 = Math.floor(Math.random() * (max - min + 1) + min)
-  console.log(random1);
+console.log("Inizia " + giocatore1);
+for (i = 1; i <= n; i++){
+  var tiroGiocatore1 = Math.floor(Math.random() * (max - min + 1) + min);
+  console.log(`Tiro n. ${i} = ${tiroGiocatore1}`);
+  totaleGiocatore1 += tiroGiocatore1;
 }
+console.log("Il totale di " + giocatore1 + " è " + totaleGiocatore1);
 
 //Tiri del gicatore 2
-console.log("Giocatore 2");
-for (j = 0; j < n; j++){
-  var random2 = Math.floor(Math.random() * (max - min + 1) + min)
-  console.log(random2);
+console.log("Adesso tocca a " + giocatore2);
+for (j = 1; j <= n; j++){
+  var tiroGiocatore2 = Math.floor(Math.random() * (max - min + 1) + min);
+  console.log(`Tiro n. ${j} = ${tiroGiocatore2}`);
+  totaleGiocatore2 += tiroGiocatore2;
 }
+console.log("Il totale di " + giocatore2 + " è " + totaleGiocatore2);
 
 //Individuazione del vincitore
-if (random1 > random2){
-  console.log("Ha vinto il giocatore 1 con il numero " + random1);
+if (totaleGiocatore1 > totaleGiocatore2){
+  console.log("Ha vinto " + giocatore1 + " con il numero " + totaleGiocatore1);
 } else {
-  console.log("Ha vinto il giocatore 2 con il numero " + random2);
+  console.log("Ha vinto " + giocatore2 + " con il numero " + totaleGiocatore2);
 }
