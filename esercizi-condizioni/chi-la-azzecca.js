@@ -6,19 +6,17 @@
   http://www.imparareaprogrammare.it
 */
 
-function getRandomIntInclusive(1, 100) {
-  1 = Math.ceil(1);
-  100 = Math.floor(100);
-  return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-}
+var min = 1;
+var max = 100;
+var random = Math.floor(Math.random() * (max - min + 1)) + min;
 
-var player1 = 2;
+var player1 = 12;
 var player2 = 35;
 
-if (player1 = math.random){
-  console.log("Player1 ha azzeccato!");
-} else if (player2 = math.random){
-  console.log("Player2 ha azzeccato!");
+if (player1 == random){
+  console.log("Player1 ha azzeccato! Il numero è " + random);
+} else if (player2 == random){
+  console.log("Player2 ha azzeccato! Il numero è " + random);
 } else {
-  console.log("Avete sbagliato, il numero esatto è " + )
+  console.log("Avete sbagliato, il numero esatto è " + random);
 }
