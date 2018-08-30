@@ -8,3 +8,10 @@
   Piuttosto che passarein input i giorni del mese passa direttamente il mese e calcola tu i giorni corrispondenti.
   http://www.imparareaprogrammare.it
 */
+
+var gennaio = 31;
+var lunedì = 0;
+
+for (i = 0; i < 31; i++){
+  
+}
