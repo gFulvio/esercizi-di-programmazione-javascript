@@ -9,9 +9,47 @@
   http://www.imparareaprogrammare.it
 */
 
-var gennaio = 31;
-var lunedì = 0;
+var mese = "Aprile";
+var numeroGiorni = 0;
+var numeroGiorno = 2;
+var giorno = "";
 
-for (i = 0; i < 31; i++){
-  
+if (mese == "Novembre" || mese == "Aprile" || mese == "Giugno" || mese == "Settembre"){
+  numeroGiorni = 30;
+} else if (mese == "Febbraio"){
+  numeroGiorni = 28;
+} else {
+  numeroGiorni = 31;
+}
+
+for (i = 1; i < numeroGiorni + 1; i++){
+
+  switch (numeroGiorno){
+    case 0:
+      giorno = "Lunedì";
+      break;
+    case 1:
+      giorno = "Martedì";
+      break;
+    case 2:
+      giorno = "Mercoledì";
+      break;
+    case 3:
+      giorno = "Giovedì";
+      break;
+    case 4:
+      giorno = "Venerdì";
+      break;
+    case 5:
+      giorno = "Sabato";
+      break;
+    case 6:
+      giorno = "Domenica";
+      numeroGiorno = - 1;
+      break;
+  }
+    console.log(mese + " " + i + " " + giorno);
+
+    numeroGiorno += 1;
+
 }

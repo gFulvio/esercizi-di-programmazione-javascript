@@ -14,7 +14,7 @@
   http://www.imparareaprogrammare.it
 */
 
-var v = 22;
+var v = prompt("Inserisci un voto");
 
 /*if (v < 18){
   console.log("insufficiente");

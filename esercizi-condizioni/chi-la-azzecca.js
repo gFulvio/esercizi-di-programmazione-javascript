@@ -10,8 +10,8 @@ var min = 1;
 var max = 100;
 var random = Math.floor(Math.random() * (max - min + 1)) + min;
 
-var player1 = 12;
-var player2 = 35;
+var player1 = prompt("Inserisci un numero");
+var player2 = prompt("Inserisci un numero");
 
 if (player1 == random){
   console.log("Player1 ha azzeccato! Il numero è " + random);

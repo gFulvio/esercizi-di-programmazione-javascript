@@ -5,6 +5,9 @@
 */
 
 var input = 3;
+var stringToPrint = ""
+
 for (i = 1; i < 11; i++){
-  console.log(input*i);
+  stringToPrint += input*i + " ";
 }
+console.log(stringToPrint);

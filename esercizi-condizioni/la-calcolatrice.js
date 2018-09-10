@@ -15,9 +15,9 @@
   http://www.imparareaprogrammare.it
 */
 
-var num1 = 30;
-var num2 = 25;
-var operazione = "^";
+var num1 = prompt("inserisci il primo numero");
+var operazione = prompt("inserisci un operatore");
+var num2 = prompt("inserisci il secondo numero");
 var risultato = 0;
 
 switch (operazione){
