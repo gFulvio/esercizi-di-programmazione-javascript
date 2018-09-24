@@ -20,7 +20,7 @@
 * **Difficili**
   * Fai il professore
   * La calcolatrice
-  
+
 ##Esercizi sui cicli (for, while e do-while)
 * **Facili**
   * Rincorri la decina
@@ -30,7 +30,7 @@
   * Il calendario mediocre
 * **Difficili**
   * Rombo che stampa!
-  
+
 ##Esercizi sulle array
 * **Facili**
   * Invertimi
@@ -41,7 +41,7 @@
 * **Difficili**
   * Azzecca e azzera
   * Metti un po’ d’ordine
-  
+
 ##Esercizi sulle array multidimensionali
 * **Facili**
   * Procedi alla cieca
@@ -51,7 +51,7 @@
   * Sommali tutti
 * **Difficili**
   * Righe o colonne?
-  
+
 ##Esercizi sulle funzioni
 * **Facili**
   * La funzione banale

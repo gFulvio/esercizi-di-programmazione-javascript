@@ -9,22 +9,33 @@
 
 //Generazione array con 100 numeri casuali
 var min = 1;
-var max = 100;
+var max = 50;
 
 var array1 = Array.from({length: 100}, (v, i) => Math.floor(Math.random() * (max - min + 1)) + min);
 
 console.log(array1);
 
-//Input dell'utente
 var input = Number(prompt("inserisci numero"));
-console.log(input);
 
-//Funzione
-
-function divisibile (element) {
-  return element % input === 0;
+//Input dell'utente
+/*function diversoDaZero(elemento) {
+  return elemento != 0;
 }
 
-var filtro = array1.findIndex(divisibile);
+do{
 
-console.log(filtro);
+  console.log(input);
+
+  for (i=0 ; i<= array1.length; i++){
+  if (array1[i]%input == 0){
+    array1[i] = 0;
+  }
+ }
+
+ console.log(array1);
+} while (array1.every(diversoDaZero) == true);*/
+
+
+var map = array1.map(x => x/input);
+
+console.log(map);
