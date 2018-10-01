@@ -26,10 +26,6 @@
 //Definizione limiti dei numeri casuali
 var min = 1;
 var max = 100;
-var somma = 0;
-var sommaC0 = 0;
-var sommaC1 = 0;
-var sommaC2 = 0;
 
 //Definizione input dell'utente
 var inputN = Number(prompt("inserisci primo numero"));
@@ -40,44 +36,29 @@ var matriceNxM = Array.from({length: inputN}, (v, i) =>
                     Array.from({length: inputM}, (v, i) =>
                         Math.floor(Math.random() * (max - min + 1)) + min));
 
-console.log("Matrice");
+console.log("Matrice" + inputN + "x" + inputM);
 console.log(matriceNxM);
 
 //Generazione e stampa dei nuovi array
 var arrayR = [];
   //Somme di ogni riga
     for (i = 0; i < inputN; i++){
-      somma = 0;
+      arrayR[i] = 0;
       matriceNxM[i].forEach(function(numero){
-        somma += numero;
+        arrayR[i] += numero;
       });
-      arrayR[i] = somma;
     }
 
 var arrayC = [];
   //Somme di ogni colonna
-  /*for (i = 0; i < inputN; i++){
-    somma = 0;
-    matriceNxM[i].forEach(function(index){
-      somma += numero;
-    });
-    arrayC[i] = somma;
-  }*/
-
-
-    /*for (i = 0; i<inputN; i++){
-      sommaC0 += matriceNxM[i][0];
-      sommaC1 += matriceNxM[i][1];
-      sommaC2 += matriceNxM[i][2];
+    for (i = 0; i < inputM; i++){
+      arrayC[i] = 0;
+      matriceNxM.forEach(function(element){
+        arrayC[i] += element[i]
+      });
     }
 
-    arrayC[0] = sommaC0;
-    arrayC[1] = sommaC1;
-    arrayC[2] = sommaC2;*/
-
-console.log("Array R");
+console.log("Array R (somma delle righe)");
 console.log(arrayR);
-console.log("Array C");
+console.log("Array C (somma delle colonne)");
 console.log(arrayC);
-console.log("Array D");
-console.log(arrayD);
