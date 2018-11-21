@@ -15,27 +15,29 @@ var array1 = Array.from({length: 100}, (v, i) => Math.floor(Math.random() * (max
 
 console.log(array1);
 
-var input = Number(prompt("inserisci numero"));
-
 //Input dell'utente
-/*function diversoDaZero(elemento) {
-  return elemento != 0;
-}
-
-do{
-
-  console.log(input);
-
-  for (i=0 ; i<= array1.length; i++){
+var input = Number(prompt("inserisci numero"));
+/*for (i = 0; i < array1.length; i++){
   if (array1[i]%input == 0){
     array1[i] = 0;
-  }
- }
+    }
+console.log(array1);
 
- console.log(array1);
-} while (array1.every(diversoDaZero) == true);*/
+//Operazione di azzeramento
+while (array1.every(number => number !== 0)) {
+  input = Number(prompt("inserisci numero"));
+  for (i = 0; i < array1.length; i++){
+    if (array1[i]%input == 0){
+      array1[i] = 0;
+      }
+  };
+  console.log(array1);
+}*/
 
+array1.forEach(function isMultiple (number){
+  if (number%input == 0){
+    number = 0;
+  };
+})
 
-var map = array1.map(x => x/input);
-
-console.log(map);
+console.log(array1);

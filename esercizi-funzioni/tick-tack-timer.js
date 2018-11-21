@@ -10,3 +10,11 @@
             0
   http://www.imparareaprogrammare.it
 */
+
+function contoAllarovescia (numero){
+  for (i = numero; i >= 0; i--){
+    console.log(i);
+  }
+}
+
+console.log(contoAllarovescia(prompt("Conto alla rovescia a partire da ")));

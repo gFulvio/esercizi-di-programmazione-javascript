@@ -7,3 +7,15 @@
   Hint: puoi convertire il tipo di dato
   http://www.imparareaprogrammare.it
 */
+
+
+
+
+var input = 5923
+console.log(input);
+
+function numeroCifre (numero){
+  return numero.toString().length;
+}
+
+console.log(numeroCifre(input));

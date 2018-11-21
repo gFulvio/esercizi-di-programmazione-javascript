@@ -7,3 +7,14 @@
   Hint: 5! = 5*4*3*2*1
   http://www.imparareaprogrammare.it
 */
+
+var input = prompt("Calcola il fattoriale di ");
+var output = 1;
+
+function fattoriale (numero){
+  for (i = numero; i > 0; i--){
+    output *= i;
+} return output;
+}
+
+console.log(fattoriale(input));
